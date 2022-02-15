@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Booking</title>
+    <link rel="stylesheet" href="{% static 'styles/booking.css' %}">
+  </head>
+  <body>
+    
+    <div class="booking">
+
+    <form action = "../Payment/pay">
+       {% csrf_token %}
+       <p> Select the date to travel </p>
+       <input type="date" id='date' value=""></br>
+       <p> persons </p>
+       <input type="number" min="0" max="10"></br>
+       <input type="submit" name=" " value="Make Payment" >
+
+    </form>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hyderabad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'styles/destination.css' %}">
+  </head>
+  <body>
+    <h1> Get Ready to visit Hyderabad </h1>
+    <div class="destination">
+      <img src="{% static 'images/hyderbad.jpg'%}" alt="Hyderabad">
+    <p> Hyderabad is the capital of southern India's Telangana state. A major center for the technology industry, it's home to many upscale restaurants and shops. Its historic sites include Golconda Fort, a former diamond-trading center that was once the Qutb Shahi dynastic capital.
+Hyderabad is one of the top tourist destinations in South India and one of the top places to experience Telangana Tourism. It is known for its rich history and culture with monuments, mosques, palaces & temples. Typically, 2 days is required to explore best Hyderabad City Tours. Also known as The City of Nizams and The City of Pearls, Hyderabad is today one of the fast developing cities in the country and a modern hub of IT, ITES, and Biotechnology. Charminar, Chowmahalla Palace, Falaknuma Palace, Golconda Fort, Qutub Shahi Tombs, Mecca Masjid, Birla Temple, Hussain Sagar Lake, Necklace Road, Lumbini Park and Buddha Statue are the top Places to visit in Hyderabad.
+
+Srisailam & Nagarjuna Sagar are also close to Hyderabad and 1-2 day trips can be planned to visit Hyderabad along with these places.</p>
+    <p> Duration ---> 2 days 1 night </p><br>
+    <p> Only INR 650 </p>
+    <form action = "booking" method="post">
+       {% csrf_token %}
+   <input type = "submit" name=" " value="Book now">
+  </body>
+</html>

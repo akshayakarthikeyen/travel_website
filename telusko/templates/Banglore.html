@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Banglore</title>
+    <link rel="stylesheet" href="{% static 'styles/destination.css' %}">
+  </head>
+  <body>
+    <h1> Get Ready to visit Banglore </h1>
+    <div class="destination">
+      <img src="{% static 'images/bangalore.jpg'%}" alt="Banglore">
+    <p> Bengaluru (also called Bangalore) is the capital of India's southern Karnataka state. The center of India's high-tech industry, the city is also known for its parks and nightlife. By Cubbon Park, Vidhana Soudha is a Neo-Dravidian legislative building
+Coorg is a land of aromatic coffee plantation, lush and opulent hills of Western Ghats, verdant meadows, serene waterfalls and so much more. Popularly known as the Scotland of India, Coorg lives up to its name with luring amalgamation of history, luxury, adventure and mouth-watering cuisine. Sits gracefully along the western ghats, this famous coffee-producing hill station is well-known for its jaw-dropping scenery and opulence.
+
+To witness the butterflies dancing above the coffee plantations and the forest bathed in warm sunlight, this place is nothing less than a fairytale came straight out of wonderland. From witnessing the white water cascading over the boulders in Abbey Falls to admiring the panoramic vistas of green valleys, towering hills and paddy fields from Rajs's Seat, this tour package from Banaglore to Coorg has it all. </p>
+    <p> Duration ---> 2 days 1 night </p><br>
+    <p> Only INR 750 </p>
+    <form action = "booking" method="post">
+       {% csrf_token %}
+   <input type = "submit" name=" " value="Book now">
+  </body>
+</html>

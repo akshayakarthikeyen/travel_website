@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title>log in</title>
+    <link rel="stylesheet" href="{% static 'styles/login.css' %}">
+
+  </head>
+  <body>
+  <div class="loginbox">
+    <div class="background_image" style="background-image:url('login.jpg')"></div>
+    <h1> Login Here </h1>
+    <form action = "login" method="post">
+      {% csrf_token %}
+      <p> Username : </p>
+      <input type="text"  name="username" placeholder="Enter Username"><br>
+      <p> Password : </p>
+      <input type="password"  name="password" placeholder="Enter Password"><br>
+      <input type = "submit" name=" " value="Login">
+      <a href ='#'> Don't have an account </a>
+
+      </form>
+</div>
+      <div class ="error">
+        {% for message in messages %}
+           <h3>{{message}}</h3>
+        {% endfor %}
+      </div>
+  </body>
+</html>

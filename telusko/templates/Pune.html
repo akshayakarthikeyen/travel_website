@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pune</title>
+    <link rel="stylesheet" href="{% static 'styles/destination.css' %}">
+  </head>
+  <body>
+
+    <h1> Get Ready to visit Pune </h1>
+    <div class="destination">
+    <img src="{% static 'images/pune.jpg'%}" alt="Pune">
+    <p>The blissful weather of the town bustling with the beas river, scenic splendor, and jolly vibes of India's most popular and beautiful hill station Manali nestled between Kullu Valley and Beas River covered with snow-capped mountains and pine tress. During this adventure, you will come across 450 years old Hidimba Devi temple and experience natural hot water springs in Vashisht Kund. You can visit the Kullu district near Manali which is a beautiful place with activities like paragliding and river rafting. This tour also features skiing and snowmobiling activities during winter and sightseeing spots in the summer and monsoon season. Apart from these activities, you will also cover Vashisht Village with a shopping day at Manali mall road for souvenirs from the trip.
+
+The blissful weather of the town bustling with the beas river, scenic splendor, and jolly vibes of India's most popular and beautiful hill station Manali nestled between Kullu Valley and Beas River covered with snow-capped mountains and pine tress. During this adventure, you will come across 450 years old Hidimba Devi temple and experience natural hot water springs in Vashisht Kund. You can visit the Kullu district near Manali which is a beautiful place with activities like paragliding and river rafting. This tour also features skiing and snowmobiling activities during winter and sightseeing spots in the summer and monsoon season. Apart from these activities, you will also cover Vashisht Village with a shopping day at Manali mall road for souvenirs from the trip.</p>
+   <p> Duration ---> 2 days 1 night </p><br>
+   <p> Only INR 600 </p>
+
+   <form action = "booking" method="post">
+       {% csrf_token %}
+  <input type = "submit" name=" " value="Book now">
+  </body>
+</html>

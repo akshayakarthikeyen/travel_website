@@ -1,0 +1,46 @@
+.destination p{
+  display: inline-block;
+  font-family: cursive;
+  font-size: 25px;
+  font-style: italic;
+}
+h1{
+  margin:0;
+  padding: 20px 20px 50px 300px;
+  font-size: 50px;
+  background:transparent;
+  color: #18687a;
+}
+.destination img {
+  width: 400px;
+  height: 300px;
+  padding: 10px 100px 20px 450px;
+  border-radius: 50px;
+}
+
+.destination{
+
+  background-size: cover;
+  background-position: center;
+
+}
+
+.destination input[type='submit']{
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    top:50%;
+    left: 50%;
+  }
+.destination form{
+  padding-left: 45%;
+}
+body{
+    background-image: url('../images/tour1.jpg');
+    background-size: cover;
+}
+.pa{
+  color: yellow;
+}

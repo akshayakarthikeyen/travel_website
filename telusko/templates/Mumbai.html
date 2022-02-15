@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mumbai</title>
+    <link rel="stylesheet" href="{% static 'styles/destination.css' %}">
+  </head>
+  <body>
+
+    <h1> Get Ready to visit Mumbai </h1>
+    <div class="destination">
+    <img src="{% static 'images/mumbai.jpg'%}" alt="Mumbai">
+    <p> Mumbai, the city where dreams are made and fulfilled! From jam-packed railway platforms to the famous Dabbawalas, multi-millionaires to suburban slums, the dazzling Bollywood to the quintessential vada pav, bhel puri, and sev puri, the uniqueness of Mumbai is beyond words. If you are planning a trip to Mumbai, make sure you visit the right places to imbibe the dynamic effervescence of this city. </p>
+    <p> Duration ---> 2 days 1 night </p><br>
+    <p> Only INR 700 </p>
+    <form action = "booking" method="post">
+       {% csrf_token %}
+      <input type = "submit" name=" " value="Book now">
+    </form>
+  </div>
+  </body>
+</html>
